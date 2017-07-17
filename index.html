@@ -192,7 +192,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="mailto:joyceigomez@gmail.com">
+    <!--form action="/action_page.php" target="mailto:joyceigomez@gmail.com">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -202,7 +202,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </form-->
+    <form method="post" action="email.php">
+    <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+    </p>
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" />
+    </p>
+    <p>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" cols="30"></textarea>
+    </p>
+    <p>
+        <input type="submit" name="send" value="Send message" />
+    </p>
+</form>
   <!-- End Contact Section -->
   </div>
 
