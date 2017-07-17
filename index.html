@@ -203,22 +203,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         </button>
       </p>
     </form-->
-    <form method="post" action="/email.php">
-    <p>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
-    </p>
-    <p>
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" />
-    </p>
-    <p>
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" cols="30"></textarea>
-    </p>
-    <p>
-        <input type="submit" name="send" value="Send message" />
-    </p>
+    <form action="" method="post">
+First Name: <input type="text" name="first_name"><br>
+Last Name: <input type="text" name="last_name"><br>
+Email: <input type="text" name="email"><br>
+Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+<input type="submit" name="submit" value="Submit">
 </form>
   <!-- End Contact Section -->
   </div>
