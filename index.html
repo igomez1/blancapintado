@@ -192,7 +192,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
 
-    <!--form action="/action_page.php" target="mailto:joyceigomez@gmail.com">
+    <form id = "gform" action="https://script.google.com/macros/s/AKfycbxPKbCkSLc-Oy28GWhZFxuL6HXnL0_cqSZilWDXDqBV2NOyzlc/exec" method="POST">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -202,14 +202,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form  -->    ABOVE WAS INCLUDED BELOW WAS THE SECOND>
-    <form id = "gform" action="https://script.google.com/macros/s/AKfycbxPKbCkSLc-Oy28GWhZFxuL6HXnL0_cqSZilWDXDqBV2NOyzlc/exec" method="POST">
-First Name: <input type="text" name="first_name"><br>
-Last Name: <input type="text" name="last_name"><br>
-Email: <input type="text" name="email"><br>
-Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-<input type="submit" name="submit" value="Submit">
-</form>
+    </form>
+
 
 
 
@@ -226,6 +220,14 @@ Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
 
 <!-- END PAGE CONTENT -->
 </div>
+ <script data-cfasync = "false" type = "text/javascript"
+ src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <div style ="display:none;" id = "thank-you">
+    <h2><em> Thanks </em>
+    </div>
+
+
+
 
 </body>
 </html>
