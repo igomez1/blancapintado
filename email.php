@@ -1,4 +1,23 @@
 <?php
+if (isset ($_POST['submit'])){
+  $message = 'Name: ' .$_POST['name'] ."\n"
+    .'Email: ' .$_POST['email'] ."\n"
+    .'Comment: ' .$_POST['message'];
+
+    mail ('joyceigomez@gmail.com', 'Sample', $message);
+
+
+}
+
+?>
+
+
+
+
+
+
+
+<!--?php
 if(!isset($_POST['submit']))
 {
 	//This page should not be accessed directly. Need to submit the form.
@@ -58,4 +77,4 @@ function IsInjected($str)
   }
 }
 
-?>
+?-->
